@@ -1,24 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Coin from './components/coin/coin';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} alt="react logo" className="App-logo" />
+        <h1 className="app-title">
+          Coin Exchange
+        </h1>
       </header>
+      <table className="coin-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Ticker</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <Coin name="Bitcoin" ticker="BTC" price={9999} />
+        <Coin name="Ethereum" ticker="ETH" price={299} />
+        <Coin name="Tether" ticker="USDT" price={1.0} />
+        <Coin name="Ripple" ticker="XRP" price={0.2} />
+      </tbody>
+    </table>
     </div>
   );
 }
