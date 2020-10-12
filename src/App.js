@@ -35,6 +35,7 @@ function App(props) {
         ticker: coin.symbol,
         balance: 0,
         price: formatPrice(coin.quotes.USD.price),
+        max_supply: coin.max_supply,
       };
     })
     // Retrive the prices
@@ -50,6 +51,23 @@ function App(props) {
 
   const handelToggleBalance = () => {
     setShowBalance(oldValue => !oldValue);
+  }
+
+  const handleLiquidity = () => {
+    setBalance(oldValue => oldValue + 1200);
+  }
+
+  const handleTransaction = (isBuy, valueChangeId) => { 
+    const balanceChange = isBuy ? 1 : -1;
+    const newCoinData = coinData.map( function( values ) {
+      let newValues = { ...values };
+      if ( valueChangeId === values.key ) {
+        newValues.balance += balanceChange;
+        setBalance( oldBalance => oldBalance - balanceChange * newValues.price );
+      }
+      return newValues;
+    });    
+    setCoinData(newCoinData);
   }
 
   const handleRefresh = async (valueChangeId) => {
@@ -73,11 +91,13 @@ function App(props) {
       <AccountBalance 
         amount={balance}
         showBalance={showBalance}
-        handelToggleBalance={handelToggleBalance} />
+        handelToggleBalance={handelToggleBalance}
+        handleLiquidity={handleLiquidity} />
       <Coinlist
         coinData={coinData}
         showBalance={showBalance}
-        handleRefresh={handleRefresh} />
+        handleRefresh={handleRefresh}
+        handleTransaction={handleTransaction} />
       <Footer />
     </Div>
   );

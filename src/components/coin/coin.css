@@ -4,7 +4,13 @@ button {
     border: none;
     border-radius: 8px;
     padding: .5rem;
+    margin: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: rgb(189, 189, 189);
 }
 
 .refresh {
@@ -13,6 +19,10 @@ button {
     padding: 3px;
     color: rgb(226, 226, 226);
     padding: .5rem;
+
+}
+.refresh:hover {
+    background-color: rgb(80, 126, 182);
 }
 
 .buy {
@@ -22,6 +32,9 @@ button {
     color: rgb(226, 226, 226);
     padding: .5rem;
 }
+.buy:hover {
+    background-color: rgb(99, 136, 94);
+}
 
 .sell {
     background-color: rgb(196, 0, 0);
@@ -29,4 +42,7 @@ button {
     padding: 3px;
     color: rgb(226, 226, 226);
     padding: .5rem;
+}
+.sell:hover {
+    background-color: rgb(202, 57, 57);
 }

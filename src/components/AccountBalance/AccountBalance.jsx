@@ -16,12 +16,16 @@ export default function AccountBalance(props) {
     let content = null;
     if ( props.showBalance ) {
         content = <>$ <span> {props.amount} </span></>;
+
     }
 
     return (
         <Section className="account-balance">
             Balance: { content }
+            <div>
             <button onClick={props.handelToggleBalance}>{buttonText}</button>
+            <button onClick={props.handleLiquidity}>Add liquidity</button>
+            </div>
         </Section>
     );
 }
@@ -30,5 +34,5 @@ export default function AccountBalance(props) {
 
 
 AccountBalance.propTypes = {
-    amount: PropTypes.number.isRequired
+    amount: PropTypes.number.isRequired,
 }

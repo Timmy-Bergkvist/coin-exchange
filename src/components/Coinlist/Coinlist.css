@@ -2,10 +2,13 @@
 .coin-table {
     margin: 50px auto 50px auto;
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .table {
     width: 100%;
   }
-  
+
+  th {
+    border: none;
+  }
