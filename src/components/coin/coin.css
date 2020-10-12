@@ -1,0 +1,32 @@
+
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: .5rem;
+
+}
+
+.refresh {
+    background-color: rgb(43, 105, 180);
+    border-radius: 8px;
+    padding: 3px;
+    color: rgb(226, 226, 226);
+    padding: .5rem;
+}
+
+.buy {
+    background-color: rgb(17, 145, 3);
+    border-radius: 8px;
+    padding: 3px;
+    color: rgb(226, 226, 226);
+    padding: .5rem;
+}
+
+.sell {
+    background-color: rgb(196, 0, 0);
+    border-radius: 8px;
+    padding: 3px;
+    color: rgb(226, 226, 226);
+    padding: .5rem;
+}

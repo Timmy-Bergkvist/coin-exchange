@@ -6,16 +6,24 @@
     align-items: center;
     justify-content: flex-start;
     font-size: 36px;
-    color: white;
+    color: rgb(211, 211, 211);
   }
 
   .app-title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .App-logo {
     height: 8rem;
     pointer-events: none;
+  }
+
+  .app-second-title {
+    display: block;
+    display: flex;
+  
+    font-size: 30px;
+    color: rgb(170, 123, 53);
   }
 
 

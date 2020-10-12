@@ -10,7 +10,7 @@ export default function Coinlist(props) {
           <th>Name</th>
           <th>Ticker</th>
           <th>Price</th>
-          { props.showBalance ? <th>Balance</th> : null }
+          <th>Balance</th>
           <th>Actions</th>
         </tr>
       </thead>

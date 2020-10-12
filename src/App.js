@@ -2,12 +2,13 @@ import React, {useState, useEffect} from 'react';
 import Coinlist from './components/Coinlist/Coinlist';
 import AccountBalance from './components/AccountBalance/AccountBalance';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import styled from 'styled-components';
 import axios from 'axios';
 
 const Div = styled.div`
   text-align: center;
-  background-color: rgb(68, 68, 160);
+  background-color: rgb(43 63 102);
   color: #cccccc;
 `;
 
@@ -77,6 +78,7 @@ function App(props) {
         coinData={coinData}
         showBalance={showBalance}
         handleRefresh={handleRefresh} />
+      <Footer />
     </Div>
   );
 }

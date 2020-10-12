@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './coin.css'
 import styled from 'styled-components';
 
 const Td = styled.td`
     border: 1px solid #cccccc;
-    width: 25vh;
+    width: 50vh;
 `;
 
 export default function coin(props) {
@@ -21,11 +22,13 @@ export default function coin(props) {
             <Td>{props.name}</Td>
             <Td>{props.ticker}</Td>
             <Td>${props.price}</Td>
-            { props.showBalance ? <><Td>{props.balance}</Td></> : null }
+            <Td>{ props.showBalance ? <>{props.balance}</> : "-" }</Td>
             <Td>
                 <form action="#" method="POST">
-                    <button onClick={handleClick}>Refresh</button>
+                    <button className="refresh" onClick={handleClick}>Refresh</button>
                 </form>
+                <button className="buy" >Buy</button>
+                <button className="sell" >Sell</button>
             </Td>
         </tr>
     );
