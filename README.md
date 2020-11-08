@@ -1,4 +1,23 @@
+
+This project was part of a course from ivan on tech.
+https://academy.ivanontech.com/react-web-development-101
+
+
+## Deployment
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+To run this project you need the following tools installed:
+
+  - <a href="https://nodejs.org/en/" target="_blank"> NodeJs </a>
+  - <a href="https://code.visualstudio.com/" target="_blank"> VS Code </a> or a code editor that have a debug tool.
+  - <a href="https://git-scm.com/" target="_blank"> Git </a>
+  - <a href="https://www.npmjs.com/" target="_blank"> Npm </a>
+  
+
+<details>
+
+<summary>Click to see React deployment instructions</summary>
 
 ## Available Scripts
 
@@ -66,3 +85,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+</details>
+
+
+## Credits
+  
+   #### Media
+  - The photos used in this site were obtained from:
+
+    - https://www.pngwave.com/
+    
+
+   #### Acknowledgements
+  - Inspiration for this project was obtained from:
+    
+    - https://coinpaprika.com/
+    
+    - https://academy.ivanontech.com/
+   
+    
