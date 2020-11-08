@@ -1,6 +1,4 @@
-
-This project was part of a course from ivan on tech.
-https://academy.ivanontech.com/react-web-development-101
+This project is part of a course from <a href="https://academy.ivanontech.com/react-web-development-101" target="_blank"> ivan on tech.</a>
 
 
 ## Deployment
